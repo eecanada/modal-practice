@@ -6,7 +6,20 @@ const closeModalButton = document.querySelector('.close-modal');
 const openModalButtons = document.querySelectorAll('.show-modal');
 
 openModalButtons.forEach((openModalButton) =>
-  openModalButton.addEventListener('click', () =>
-    modal.classList.remove('hidden')
-  )
+  openModalButton.addEventListener('click', () => {
+    modal.classList.remove('hidden');
+    overlay.classList.remove('hidden');
+  })
 );
+
+function closeModal() {
+  modal.classList.add('hidden');
+  overlay.classList.add('hidden');
+}
+
+window.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') closeModal()
+});
+
+closeModalButton.addEventListener('click', closeModal);
+overlay.addEventListener('click', closeModal);
