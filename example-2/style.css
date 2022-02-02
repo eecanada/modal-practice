@@ -90,3 +90,13 @@ p {
   backdrop-filter: blur(3px);
   z-index: 5;
 }
+
+@media screen and (max-width: 817px) {
+  #modal-button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+}
