@@ -58,3 +58,16 @@ p {
   background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
   transition: 300ms ease-in-out;
 }
+
+
+
+#home {
+  text-align: center;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  font-size: 1rem;
+  position: absolute;
+  top: 1rem;
+  left:1rem
+}
