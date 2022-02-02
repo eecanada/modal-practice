@@ -10,6 +10,9 @@ function closeModal() {
 }
 
 closeModalButton.addEventListener('click', closeModal);
+closeModalButton.addEventListener('click', (e)=>{
+  e.preventDefault()
+});
 
 // modalBg.addEventListener('click', closeModal);
 
