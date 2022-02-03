@@ -24,7 +24,6 @@ body {
   border-radius: 10px;
   background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
   padding: 10px 20px;
-  
 }
 
 h1 {
@@ -59,8 +58,6 @@ p {
   transition: 300ms ease-in-out;
 }
 
-
-
 #home {
   text-align: center;
   text-decoration: none;
@@ -69,5 +66,14 @@ p {
   font-size: 1rem;
   position: absolute;
   top: 1rem;
-  left:1rem
+  left: 1rem;
+}
+
+@media screen and (max-width: 550px) {
+  h1{
+    font-size: 20px;
+  }
+  .close{
+    font-size: 20px;
+  }
 }

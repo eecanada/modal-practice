@@ -101,7 +101,6 @@ p {
   }
 }
 
-
 #home {
   text-align: center;
   text-decoration: none;
@@ -109,4 +108,25 @@ p {
   cursor: pointer;
   font-size: 2rem;
   position: absolute;
+}
+
+@media screen and (max-width: 515px) {
+  .modal {
+    padding: 3rem;
+  }
+
+  .modal h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .modal p {
+    font-size: 14px;
+  }
+
+  .close-modal {
+    font-size: 3rem;
+    top: 0.5rem;
+    right: 1.5rem;
+  }
 }
